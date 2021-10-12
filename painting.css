@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+}
+
+#myCanvas {
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+
+table {
+  width: 100%;
+  font-family: 'Helvetica', sans-serif;
+}
+
+#canvasImg {
+  width: 500px;
+  /* height: 100%; */
+}
+
+.header {
+  position:absolute;
+  width: 100%;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}

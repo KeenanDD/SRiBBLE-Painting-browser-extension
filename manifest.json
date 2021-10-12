@@ -1,0 +1,25 @@
+{
+  "name": "SRiBBLE",
+  "version": "1.0.0",
+  "description": "Allow for simple paintings in the browser",
+  "author": "Keenan Dobson",
+  "manifest_version": 2,
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "SRiBBLE",
+    "default_popup": "painting.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "painting.js"
+      ]
+    }
+  ]
+}
