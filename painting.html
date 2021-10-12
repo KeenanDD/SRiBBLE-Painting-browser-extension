@@ -19,18 +19,19 @@
   <body>
     <div class="header">
       <h2>SCRiBBLE</h2>
+      <hr />
     </div>
-<canvas id="myCanvas" width="600" height="400"></canvas>
+<canvas id="myCanvas" width="500" height="400"></canvas>
 <div id="saveArea" >
   <img id="canvasImg"/>
-  <h2>R-Click to Save SCRiBBLE</h2>
-  <button id="btnBack"></button>
+  <h3>RightClick to Save</h3>
+  <button id="btnBack" class="btn btn-light btn-sm">Go Back</button>
   </div>
   <div id="tools">
       <table>
         <tr>
-            <td><label for="colourChange">Colour: </label><input type="color" id="colourChange"/></td>
-            <td><label for="lineWidth">Line Size: </label><input type="range" class="form-range" id="lineWidth" min="1" max="20" step="1"/></td>
+            <td><label for="colourChange">🎨</label><input type="color" id="colourChange"/></td>
+            <td><label for="lineWidth">🖊️</label><input type="range" id="lineWidth" min="1" max="20" step="1"/></td>
             <td><button id="btnSave" class="btn btn-outline-primary btn-sm">Save</button><button id="btnClear" class="btn btn-outline-dark btn-sm">Clear</button></td>
           </tr>
         </table>
