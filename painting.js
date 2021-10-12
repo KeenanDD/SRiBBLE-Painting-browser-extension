@@ -1,7 +1,8 @@
 charset="utf-8"
 var drawing = false;
-var context;
-
+// var context;
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
 
 window.addEventListener('load', function() {
   //Clear screen
@@ -14,7 +15,6 @@ window.addEventListener('load', function() {
     document.getElementById('myCanvas').style.display = "block";
     document.getElementById('saveArea').style.display = "none";
     document.getElementById('tools').style.display = "block";
-
   }, false);
 
   //Width Scale
@@ -38,9 +38,9 @@ window.addEventListener('load', function() {
   }, false);
 
   //Size Canvas
-  context = document.getElementById('myCanvas').getContext("2d");
-    context.canvas.width = window.innerWidth;
-    context.canvas.height = window.innerHeight;
+  // context = document.getElementById('myCanvas').getContext("2d");
+  //   context.canvas.width = self.innerWidth;
+  //   context.canvas.height = self.innerHeight;
 
   //Mouse move
   document.onmousemove = handleMouseMove;
@@ -70,13 +70,15 @@ function handleMouseMove(e) {
   }
 }
 function handleDown(e) {
-  drawing = !drawing;
+  drawing = true;
   console.log(drawing);
   context.moveTo(e.clientX, e.clientY);
   context.beginPath();
 }
 
 function handleUp() {
-  drawing = !drawing;
+  drawing = false;
   console.log(drawing);
+
+
 }
