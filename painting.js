@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
   //Hide Save Area
   document.getElementById('saveArea').style.display = "none";
 });
-
+//Drawing / Mouse
 function handleMouseMove(e) {
   console.log(e.clientX);
   console.log(e.clientY);

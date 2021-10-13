@@ -1,5 +1,5 @@
 body {
-  border: 2px outset #DDDDDD;
+  border: 3px solid #DDDDDD;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -7,10 +7,14 @@ body {
   background-color: #fff;
   margin-bottom: 5px;
 }
-hr {
-margin-left: 25%;
-  width: 50%;
+.topUnderline {
+margin-left: 30%;
+  width: 40%;
   margin-top: 0;
+}
+.bottomLine {
+  width: 70%;
+  margin-left: 15%;
 }
 h2 {
   padding-top: 2%;
@@ -20,7 +24,6 @@ table {
   margin-top: 5px;
   margin-bottom: 10px;
   width: 100%;
-
   text-align: center;
 }
 input {
