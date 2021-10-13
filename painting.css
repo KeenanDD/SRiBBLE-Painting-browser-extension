@@ -11,10 +11,19 @@ body {
 margin-left: 30%;
   width: 40%;
   margin-top: 0;
+  height:2px;
+  border-width:0;
+  color:grey;
+  background-color:grey;
 }
 .bottomLine {
   width: 70%;
   margin-left: 15%;
+  height:3px;
+  border-width:0;
+  color:black;
+  background-color:black;
+}
 }
 h2 {
   padding-top: 2%;
@@ -32,6 +41,9 @@ input {
 #canvasImg {
   width: 500px;
   /* height: 100%; */
+}
+td {
+  padding-left: 3%;
 }
 
 .header {
